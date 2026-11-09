@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\User;
+use App\Models\Employee;
 
 return [
 
@@ -11,7 +11,7 @@ return [
     |
     | This option defines the default authentication "guard" and password
     | reset "broker" for your application. You may change these values
-    | as required, but they're a perfect start for most applications.
+    | as required, but they're a perfect start for mostexit applications.
     |
     */
 
@@ -64,7 +64,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => env('AUTH_MODEL', User::class),
+            'model' => Employee::class,
         ],
 
         // 'users' => [
